@@ -1,24 +1,41 @@
 <?php
 
-// 1) Créez une fonction qui prend en paramètre un nombre et qui retourne le carré de ce nombre.
+echo"1) Créez une fonction qui prend en paramètre un nombre et qui retourne le carré de ce nombre.";
 
-$num1= mt_rand(1,100);
-// $num2= mt_rand(1,100);
-
-function carré($num1){
-
-return ;
-    
-
+function carre($num){
+    return $num * $num;
 }
+
+$num1 = mt_rand(1, 100);
+$num2 =array(5, 10, 15);
+$resultat = carre($num1);
+$resultat2_0 = carre($num2[0]);
+$resultat2_1 = carre($num2[1]);
+$resultat2_2 = carre($num2[2]);
 
 // puis affichez le carré de 5, 10 et 15 en utilisant cette fonction.
 
+echo "Le carré de $num1 est = $resultat <br>";
+echo "Le carré de $num2[0] est = $resultat2_0 <br> Le carré de $num2[1] est = $resultat2_1 <br> Le carré de $num2[2] est = $resultat2_2 <br>";
 
-// 2) Créez une fonction qui prend en paramètre un nombre et qui retourne le cube de ce nombre.
 
 
+echo" <hr>2) Créez une fonction qui prend en paramètre un nombre et qui retourne le cube de ce nombre.";
+
+
+function cube($num) {
+    return $num * $num * $num;
+}
+
+$resultat_cube_1 = cube($num2[0]);
+$resultat_cube_2 = cube($num2[1]);
+$resultat_cube_3 = cube($num2[2]);
 // puis affichez le cube de 5, 10 et 15 en utilisant cette fonction.
+
+echo "Le cube de $num2[0] est = $resultat_cube_1 <br>";
+echo "Le cube de $num2[1] est = $resultat_cube_2 <br>";
+echo "Le cube de $num2[2] est = $resultat_cube_3 <br>";
+
 
 // 3) Créez une fonction qui prend une date à n'importe quel format et qui retourne la date au format français
 // telle qu'indiquée dans l'exemple en utilisant $semaineFr et $moisFr.
