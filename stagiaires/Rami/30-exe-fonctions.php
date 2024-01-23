@@ -14,14 +14,14 @@ $resultat2_1 = carre($num2[1]);
 $resultat2_2 = carre($num2[2]);
 
 // puis affichez le carré de 5, 10 et 15 en utilisant cette fonction.
-
+echo "<br>";
 echo "Le carré de $num1 est = $resultat <br>";
 echo "Le carré de $num2[0] est = $resultat2_0 <br> Le carré de $num2[1] est = $resultat2_1 <br> Le carré de $num2[2] est = $resultat2_2 <br>";
 
 
 
 echo" <hr>2) Créez une fonction qui prend en paramètre un nombre et qui retourne le cube de ce nombre.";
-
+echo "<br>";
 
 function cube($num) {
     return $num * $num * $num;
